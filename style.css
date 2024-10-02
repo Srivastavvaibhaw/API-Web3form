@@ -1,0 +1,97 @@
+/* Body and overall container */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1a202c; /* Dark background similar to bg-gray-900 */
+  color: #edf2f7; /* Light gray text */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 800px;
+  padding: 15px;
+  width: 100%;
+}
+
+.form-wrapper {
+  background-color: #2d3748; /* Dark gray background similar to bg-gray-800 */
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #edf2f7; /* Similar to text-gray-100 */
+}
+
+p {
+  text-align: center;
+  color: #a0aec0; /* Gray text for description similar to text-gray-400 */
+  font-size: 14px;
+}
+
+label {
+  font-size: 14px;
+  color: #a0aec0; /* Label text similar to text-gray-400 */
+  display: block;
+  margin-bottom: 8px;
+}
+
+input[type="text"], input[type="email"], textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #cbd5e0; /* Light gray border similar to bg-gray-100 */
+  background-color: #edf2f7; /* Light input background */
+  color: #2d3748; /* Dark text */
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+input[type="text"]::placeholder, input[type="email"]::placeholder, textarea::placeholder {
+  color: #718096; /* Placeholder similar to placeholder-gray-500 */
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #4a5568; /* Darker gray border on focus */
+}
+
+textarea {
+  resize: vertical;
+  height: 120px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #5a67d8; /* Indigo background */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #434190; /* Darker indigo on hover */
+}
+
+#result {
+  text-align: center;
+  margin-top: 15px;
+  color: #a0aec0; /* Text color similar to text-gray-400 */
+}
